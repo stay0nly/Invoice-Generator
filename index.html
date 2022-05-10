@@ -4,42 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/93cab00ee1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Invoice Creator</title>
 </head>
 <body>
     <header>
-        <h1>Invoice Creator</h1>
+        <h1 class="header">Invoice Creator</h1>
     </header>
-    <div class="container">
-        <div class="top">
-            <h1 class="heading">Invoice creator</h1>
-            <p class="sup-text">Thanks for choosing GoodCorp, LLC!</p>
-        </div>
-        <div class="buttom">
-            <div class="buttons">
-                <button class="choise-btn" id="car-wash">Wash Car: $10</button>
-                <button class="choise-btn" id="mow-lawn">Mow Lawn: $20</button>
-                <button class="choise-btn" id="pull-weeds">Pull Weeds: $30</button>
+    <section>
+        <div class="container">
+            <div class="top">
+                <h1 class="heading">Invoice Generator</h1>
+                <p class="sup-text">Thanks for choosing GoodCorp, LLC!</p>
             </div>
-            <div class="tasks">
-                <div class="top-text">
-                    <p>Task</p>
-                    <p>Total</p>
+            <div class="buttom">
+                <div class="buttons">
+                    <button class="choise-btn" id="car-wash">Wash Car: $10</button>
+                    <button class="choise-btn" id="mow-lawn">Mow Lawn: $20</button>
+                    <button class="choise-btn" id="pull-weeds">Pull Weeds: $30</button>
                 </div>
+                <div class="tasks">
+                    <div class="top-text">
+                        <p>TASK</p>
+                        <p>TOTAL</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="total">
+                    <div class="buttom-text">
+                        <p>NOTES</p>
+                        <p>TOTAL AMOUNT</p>
+                    </div>              
+                    <div class="buttom-sub-text">
+                        <p>We accept cash, credit card, or PayPal</p>
+                        <p id="total-amount">0$</p>
+                    </div>
+                </div>
+                <div class="button">
+                    <button class="send-btn" id="send-inv"><i class="fa-solid fa-envelope"></i>Send Invoice</button>
+                </div>
+                
             </div>
-            <hr>
-            <div class="total">
-                <p>NOTES</p>
-                <p>TOTAL:</p>
-                <p>We accept cash, credit card, or PayPal</p>
-                <p>0$</p>
-            </div>
-            <button class="send-btn" id="send-inv">Send Invoice</button>
         </div>
-    </div>
+    </section>
     <footer>
-
+        <p>
+            Created by stay0nly 
+            <a href="https://github.com/stay0nly/Invoice-Generator/" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </p>
     </footer>
 
     <script src="app.js"></script>
