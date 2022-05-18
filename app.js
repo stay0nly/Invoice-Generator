@@ -11,14 +11,12 @@ const priceEl = document.getElementById('price-el');
 const totalEl = document.getElementById('total-amount');
 
 
-
 btnCarWash.addEventListener('click', function() {
     services.push({
         name: "Wash Car",
         price: 10
     })
     renderItem(services);
-    itemExists = true;    
 })
 
 btnMowLawn.addEventListener('click', function() {
@@ -28,6 +26,9 @@ btnMowLawn.addEventListener('click', function() {
     })
     renderItem(services);
     itemExists = true; 
+    var foundValue = services.filter(obj=>obj.name==='Mow Lawn');
+    console.log(foundValue);
+    console.log(services);
 })
 
 btnPullWheels.addEventListener('click', function() {
